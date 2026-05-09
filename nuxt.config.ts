@@ -12,6 +12,10 @@ export default defineNuxtConfig({
   pwa: {
     registerType: 'autoUpdate',
 
+    devOptions: {
+      enabled: true
+    },
+
     manifest: {
       name: 'Gratka PWA',
       short_name: 'Gratka',
@@ -20,6 +24,7 @@ export default defineNuxtConfig({
       background_color: '#ffffff',
       display: 'standalone',
       start_url: '/',
+      scope: '/',
 
       icons: [
         {
