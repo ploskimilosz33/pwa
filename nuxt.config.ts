@@ -16,6 +16,10 @@ export default defineNuxtConfig({
       enabled: true
     },
 
+    workbox: {
+      globPatterns: ['**/*.{js,css,html,ico,png,svg}']
+    },
+
     manifest: {
       name: 'Gratka PWA',
       short_name: 'Gratka',
